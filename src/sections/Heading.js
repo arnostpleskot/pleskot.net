@@ -6,9 +6,7 @@ import Subheader from '../components/Subheader'
 
 const Heading = ({ data }) => (
   <Section>
-    <Header>
-      Arnošt Plesk<wbr />ot
-    </Header>
+    <Header>Arnošt Pleskot</Header>
     <Subheader>/ {data.join(' / ')} /</Subheader>
   </Section>
 )

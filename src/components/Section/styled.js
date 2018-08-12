@@ -6,8 +6,9 @@ export const StyledSection = styled.article`
   background-color: ${variables.colors.backcground};
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: auto;
   justify-content: center;
+  min-height: 100vh;
   padding: 20px;
   width: 100%;
 

@@ -24,7 +24,14 @@ module.exports = {
       resolve: `gatsby-plugin-favicon`,
       options: {
         logo: './src/assets/favicon.png',
-        injectHTML: true,
+        appName: 'Arnošt Pleskot / web developer /',
+        appDescription: '/ reason / elm / react / node / elixir / js /',
+        developerName: 'Arnošt Pleskot <me@pleskot.net>',
+        developerURL: 'https://pleskot.net',
+        dir: 'auto',
+        lang: 'en-US',
+        theme_color: '#848484',
+        display: 'standalone',
         icons: {
           android: true,
           appleIcon: true,

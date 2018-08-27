@@ -1,15 +1,17 @@
 import React from 'react'
+import { StaticQuery, graphql } from 'gatsby'
 
 import Heading from '../sections/Heading'
 import Work from '../sections/Work'
 import Me from '../sections/Me'
 import Contact from '../sections/Contact'
 
+import Layout from '../components/Layout'
 import Footer, { FooterEmail } from '../components/Footer'
 import Menu from '../components/Menu'
 
 const IndexPage = ({ data }) => (
-  <div>
+  <Layout>
     <header>
       <Heading data={data.site.siteMetadata.technologies} />
     </header>
@@ -32,17 +34,20 @@ const IndexPage = ({ data }) => (
         ]}
       />
     </Footer>
-  </div>
+  </Layout>
 )
 
-export default IndexPage
-
-export const query = graphql`
-  query IndexQuery {
-    site {
-      siteMetadata {
-        technologies
+export default props => (
+  <StaticQuery
+    query={graphql`
+      query {
+        site {
+          siteMetadata {
+            technologies
+          }
+        }
       }
-    }
-  }
-`
+    `}
+    render={data => <IndexPage data={data} {...props} />}
+  />
+)

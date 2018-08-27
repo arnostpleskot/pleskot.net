@@ -2,9 +2,8 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import 'sanitize.css/sanitize.css'
-import '../styles/inject-global'
-
-import Header from '../components/header'
+import '../../styles/inject-global'
+import { StaticQuery, graphql } from 'gatsby'
 
 const Layout = ({ children, data }) => (
   <div>
@@ -18,25 +17,28 @@ const Layout = ({ children, data }) => (
     >
       <html lang="en" />
     </Helmet>
-    {children()}
+    {children}
   </div>
 )
 
 Layout.propTypes = {
-  children: PropTypes.func,
+  children: PropTypes.arrayOf(PropTypes.node),
 }
 
-export default Layout
-
-export const query = graphql`
-  query SiteMetaQuery {
-    site {
-      siteMetadata {
-        title
-        description
-        keywords
-        author
+export default props => (
+  <StaticQuery
+    query={graphql`
+      query {
+        site {
+          siteMetadata {
+            title
+            description
+            keywords
+            author
+          }
+        }
       }
-    }
-  }
-`
+    `}
+    render={data => <Layout data={data} {...props} />}
+  />
+)

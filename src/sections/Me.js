@@ -1,6 +1,6 @@
-// @flow
 import * as React from 'react'
 import Section from '../components/Section'
+// eslint-disable-next-line
 import { DoH2, DontH2 } from '../components/ReplacedH2'
 
 const Me = () => (

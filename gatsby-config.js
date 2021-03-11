@@ -1,4 +1,4 @@
-const technologies = ['Reason', 'Elm', 'React', 'Node', 'Elixir', 'JS']
+const technologies = ['React', 'Node', 'Elixir', 'ReScript', 'Elm', 'JS']
 
 module.exports = {
   siteMetadata: {
@@ -25,7 +25,7 @@ module.exports = {
       options: {
         logo: './src/assets/favicon.png',
         appName: 'Arnošt Pleskot / web developer /',
-        appDescription: '/ reason / elm / react / node / elixir / js /',
+        appDescription: '/ react / node / elixir / rescript / elm / js /',
         developerName: 'Arnošt Pleskot <me@pleskot.net>',
         developerURL: 'https://pleskot.net',
         dir: 'auto',

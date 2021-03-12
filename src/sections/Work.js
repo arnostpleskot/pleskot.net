@@ -58,14 +58,28 @@ const Work = () => (
         rel="noopener noreferrer"
       >
         Ripple
-      </a>{' '}
-      or&nbsp;<a
-        href="https://www.gogriddy.com/"
+      </a>,{' '}
+      <a
+        href="https://www.helloharbor.com/"
         target="_blank"
         rel="noopener noreferrer"
       >
-        Griddy
-      </a>.
+        Harbor
+      </a>,{' '}
+      <a
+        href="https://www.allvoices.co/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        AllVoices
+      </a>{' '}
+      or&nbsp;<a
+        href="https://www.medmen.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        MedMen
+      </a>
     </p>
   </Section>
 )

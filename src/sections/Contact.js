@@ -27,7 +27,7 @@ const Contact = () => (
     <h2>Legals</h2>
     <address>
       Arnošt Pleskot<br />
-      Čepí 17, 533 32 Čepí<br />
+      Jindrisska 1620, 53002 Pardubice<br />
       ID: 88165566<br />
       The physical person registered in the Trade Register<br />
       from 27. 9. 2011 by Municipality of Pardubice.

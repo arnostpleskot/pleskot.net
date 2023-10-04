@@ -1,0 +1,180 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Section from "../components/Section.astro";
+import Footer from "../components/Footer.astro";
+
+import H1 from "../components/H1.astro";
+import H2 from "../components/H2.astro";
+import H3 from "../components/H3.astro";
+---
+
+<Layout title="Arnošt Pleskot / web developer /">
+  <main class="text font-light font-sans text-primary">
+    <Section header>
+      <hgroup>
+        <H1>Arnošt Pleskot</H1>
+        <p class="lowercase text-secondary">
+          / React / React Native / Node / Elixir / TS / JS /
+        </p>
+      </hgroup>
+    </Section>
+
+    <Section id="me" alter>
+      <H2>Me</H2>
+      <p>web developer / Czech Republic - Pardubice</p>
+      <div class="py-2xl">
+        <h3 class="do">Do</h3>
+      </div>
+      <p>Reason, React, Elm, Node, Elixir, HTML, CSS, JS...</p>
+      <div class="py-2xl">
+        <h3 class="dont">Don't do</h3>
+      </div>
+      <p>
+        PHP, Java, SEO, SEM, copywriting, graphic&nbsp;design
+        or&nbsp;website&nbsp;management
+      </p>
+    </Section>
+
+    <Section id="my-work">
+      <H2>My work</H2>
+      <p>
+        <a
+          href="http://www.awwwards.com/best-websites/portfolio-of-creative-knight"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Developer award and SOTD on AWWWARDS
+        </a>
+         ,<br />
+        <a
+          href="http://www.cssdesignawards.com/sites/creative-knight/24590/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          WOTD on CSS Design Awards
+        </a>
+         ,{" "}
+        <a
+          href="http://www.csswinner.com/details/portfolio-of-creative-knight/7083/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          WOTD on CSS Winner
+        </a>{" "}
+         for{" "}
+        <a
+          href="http://www.creative-knight.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          creative&ndash;knight.com
+        </a>
+      </p>
+      <p>
+        Thanks mostly to{" "}
+        <a href="http://www.symbiodigital.com/">SYMBIO Digital</a> I’ve had the
+        pleasure to work for many well-known clients,
+        <br />
+         such as LEGO, Škoda&nbsp;Auto, T&#8209;Mobile&nbsp;Czech&nbsp;Republic,
+        Karlovarské&nbsp;minerální&nbsp;vody or&nbsp;People&nbsp;in&nbsp;Need.
+      </p>
+      <p>
+        In cooperation with&nbsp;
+        <a
+          href="https://www.strv.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          STRV
+        </a>{" "}
+         I've been able&nbsp;to&nbsp;participate on&nbsp;projects
+        for&nbsp;interesting startups and&nbsp;technological companies
+        like&nbsp;
+        <a
+          href="https://www.strv.com/our-work/ripple"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Ripple
+        </a>
+         ,{" "}
+        <a
+          href="https://www.helloharbor.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Harbor
+        </a>
+         ,{" "}
+        <a
+          href="https://www.allvoices.co/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          AllVoices
+        </a>{" "}
+         or&nbsp;
+        <a
+          href="https://www.medmen.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          MedMen
+        </a>
+      </p>
+    </Section>
+    <Section id="contact-me" alter>
+      <H2>Contact me</H2>
+      <p>
+        <a href="mailto:me@pleskot.net">me@pleskot.net</a>
+        <br />
+        <a
+          href="https://github.com/arnostpleskot"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          GitHub
+        </a>{" "}
+         /{" "}
+        <a
+          href="https://www.linkedin.com/in/arnošt-p-8132245b"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          LinkedIn
+        </a>
+      </p>
+      <H3>Legals</H3>
+      <address class="text-xs">
+        Arnošt Pleskot
+        <br />
+         Jindrisska 1620, 53002 Pardubice
+        <br />
+         ID: 88165566
+        <br />
+         The physical person registered in the Trade Register
+        <br />
+         from 27. 9. 2011 by Municipality of Pardubice.
+      </address>
+    </Section>
+  </main>
+  <Footer />
+</Layout>
+
+<style is:global>
+  .do,
+  .dont {
+    background-image: url("/do.svg");
+    background-repeat: no-repeat;
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 39px;
+    height: 28px;
+  }
+
+  .dont {
+    background-image: url("/dont.svg");
+    width: 28px;
+  }
+</style>

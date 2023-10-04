@@ -1,0 +1,56 @@
+---
+import "@fontsource/lato/300.css";
+
+type Props = {
+  title: string;
+};
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Astro description" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>
+<style is:global>
+  @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
+
+  @layer base {
+    :root {
+      --color-primary: 31 31 31;
+      --color-secondary: 132 132 132;
+      --color-alter: 255 255 255;
+    }
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+
+  a {
+    text-decoration: underline;
+    color: rgb(var(--color-secondary));
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+</style>

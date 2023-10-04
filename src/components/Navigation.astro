@@ -1,0 +1,25 @@
+<nav>
+  <ul class="flex flex-row text-secondary">
+    <li class="nav-item">
+      <a href="#me">Me</a>
+    </li>
+    <li class="nav-item">
+      <a href="#my-work">My work</a>
+    </li>
+    <li class="nav-item">
+      <a href="#contact-me">Contact me</a>
+    </li>
+  </ul>
+</nav>
+
+<style>
+  .nav-item:before {
+    content: "/";
+    margin: 0px 0.25em;
+  }
+
+  .nav-item:last-child:after {
+    content: "/";
+    margin-left: 0.25em;
+  }
+</style>

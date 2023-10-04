@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   id="svg1"
+   width="1500"
+   height="1500"
+   viewBox="0 0 1500 1500"
+   sodipodi:docname="favicon.png"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false" />
+  <g
+     inkscape:groupmode="layer"
+     inkscape:label="Image"
+     id="g1">
+    <rect
+       style="fill:#1f1f1f;fill-opacity:1"
+       id="rect4"
+       width="1500"
+       height="1500"
+       x="0"
+       y="0" />
+    <path
+       style="fill:#ffffff;fill-opacity:1;stroke-width:1.0402"
+       d="M 0,0 H 1088 L 398,1500 H 0 Z"
+       id="path4"
+       sodipodi:nodetypes="ccccc" />
+  </g>
+</svg>

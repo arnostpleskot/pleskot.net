@@ -1,0 +1,24 @@
+---
+type Props = {
+  id: string;
+  alter?: boolean;
+  header?: boolean;
+};
+
+const { id, alter, header } = Astro.props;
+
+const Element = header ? "header" : "section";
+---
+
+<Element
+  id={id}
+  class:list={[
+    "min-h-screen flex w-screen flex-col items-center justify-center space-y-4 p-5 text-center",
+    {
+      "text-alter bg-primary": alter,
+      "bg-alter text-primary": !alter,
+    },
+  ]}
+>
+  <slot />
+</Element>
